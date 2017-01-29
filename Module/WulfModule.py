@@ -5,6 +5,6 @@ def UserInt(prompt):
 def KmToMi(km):
     return 0.62 * km
 def UserString(prompt):
-    print prompt
+    print prompt,
     string = raw_input()
     return string

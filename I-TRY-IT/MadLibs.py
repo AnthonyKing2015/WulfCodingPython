@@ -1,10 +1,12 @@
+import sys
+sys.path.append('../Module')
 import WulfModule
 
 sentence = ("Let's build a snowman! First we need to have a really ADJ1 snowstorm, of course"
-            "on an ADJ2 day. Watching all that CLR1 snow fall makes me VRB1 for a bowl of ADJ3"
-            "VGT1! EXCL1 it's still VRB2 and there's a lot of it. Let's go! Next is VRB3 to go "
-            "out in the cold. Once that is done, we need to get busy. We make a NOUN1 and VRB4"
-            "PLC1. It gets so ADJ4 we can't roll in it anymore!")
+            " on an ADJ2 day. Watching all that CLR1 snow fall makes me VRB1 for a bowl of ADJ3"
+            " VGT1! EXCL1 it's still VRB2 and there's a lot of it. Let's go! Next is VRB3 to go "
+            " out in the cold. Once that is done, we need to get busy. We make a NOUN1 and VRB4"
+            " PLC1. It gets so ADJ4 we can't roll in it anymore!")
             
 ADJ1 = WulfModule.UserString("Enter an adjective:")
 ADJ2 = WulfModule.UserString("Enter an adjective:")
