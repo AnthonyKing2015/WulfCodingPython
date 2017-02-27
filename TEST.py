@@ -1,26 +1,14 @@
-file = open('DataDuringRush.txt', 'r')
-SpeedList = []
-for speed in file:
-    SpeedList.append(int(speed))
-print SpeedList
+d = {}
+for line in open("Rubiks.txt"):
+    temp = line.split(",")
+    PlayerName = temp[0].strip()
+    PlayerTime = temp[1].strip()
+        
+    if PlayerTime in d:
+        d[PlayerTime].append[PlayerName]
+    else:
+        d[PlayerTime] = [PlayerName]
+            
+print d
 
-
-Total = sum(SpeedList)
-Length = len(SpeedList)
-average = Total/Length
-print average
-print Length
-
-c = 0
-Fines = 0
-for speed in SpeedList:
-    if speed >= 69:
-        c = c + 1
-if fi 
-    Fines = c * 150
-
-print c
-print Fines
-
-
-
+print sorted(d.keys())
