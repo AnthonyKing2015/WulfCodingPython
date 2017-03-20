@@ -1,5 +1,5 @@
 def UserInt(prompt):
-    print prompt
+    print prompt,
     num =int(raw_input())
     return num
 def UserString(prompt):
