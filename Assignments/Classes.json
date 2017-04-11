@@ -1,0 +1,9 @@
+[
+    
+{"Course Name" : "Programming in Python", "Professor Name" : ["Mark Cohen"], "Class Location" : ["Online"], "Grade" : ["B"] },
+{"Course Name" : "Computer Triage", "Professor Name" : ["David Eve"], "Class Location" : ["B106"], "Grade" : ["B"] }, 
+{"Course Name" : "Programming in C# II", "Professor Name" : ["David Eve"], "Class Location" : ["B120"], "Grade" : ["B"] },
+{"Course Name" : "Programming in Java II", "Professor Name" : ["Mike Dalton"], "Class Location" : ["Online", "B120"], "Grade" : ["W"] },
+{"Course Name" : "Discrete Mathmatics", "Professor Name" : ["Elizabeth Hartung"], "Class Location" : ["B206"], "Grade" : ["B"] }
+    
+]
