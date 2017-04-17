@@ -5,22 +5,17 @@ import WulfModule
 
 def main():
     jsonTxt = ""
-    f = open('Classes.json')
+    f = open('Exam5.json')
     for line in f:
         line = line.strip()
         jsonTxt = jsonTxt + line
     Courses = json.loads(jsonTxt)
-
-    name = WulfModule.UserString("Enter a course name:")
+    print Courses
+    name = WulfModule.UserString("Enter a Category:")
     for course in Courses:
-        if course["Course Name"] == name:
-            print "%s" % course["Course Name"]
-            for professorName in course["Professor Name"]:
-                print professorName
-            for location in course["Class Location"]:
-                print location
-            for grade in course["Grade"]:
-                print grade
+        if course["Category"] == name:
+            print "%s" % course["Product"] + " -", 
+            print "%s" % course["Price"]
                 
                 
                 

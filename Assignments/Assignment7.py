@@ -15,8 +15,9 @@ def OpenFile(filename):
 def ReadInfo(Courses):
     name = WulfModule.UserString("Enter a course name:")
     for course in Courses:
+        print course
         if course["Course Name"] == name:
-            print "%s" % course["Course Name"]
+            print "%s" % course["Course Name"] + " -",
             for professorName in course["Professor Name"]:
                 print professorName
             for location in course["Class Location"]:
