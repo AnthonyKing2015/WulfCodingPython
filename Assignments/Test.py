@@ -1,23 +1,7 @@
-import json
-import sys
-sys.path.append('../Module')
-import WulfModule
-
-def main():
-    jsonTxt = ""
-    f = open('Exam5.json')
-    for line in f:
-        line = line.strip()
-        jsonTxt = jsonTxt + line
-    Courses = json.loads(jsonTxt)
-    print Courses
-    name = WulfModule.UserString("Enter a Category:")
-    for course in Courses:
-        if course["Category"] == name:
-            print "%s" % course["Product"] + " -", 
-            print "%s" % course["Price"]
-                
-                
-                
-                
-main()
+Weapons = ['CANDLESTICK', 'ROPE', 'WRENCH']
+Suspects = ['MISS SCARLET', 'COL MUSTARD', 'MISS WHITE']
+p = []
+for weapon in Weapons:
+    for suspect in Suspects:
+        p.append("%s %s" %(weapon, suspect))
+print len(p)
